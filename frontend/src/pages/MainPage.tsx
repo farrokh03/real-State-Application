@@ -50,6 +50,25 @@ const MainPage = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [list.length]);
+
+  const [prod, setProd] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/items/") // Django backend API
+      .then((res) => res.json())
+      .then((data) => {
+        setProd(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching products:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  console.log(prod);
+  if (loading) return <p>Loading...</p>;
   return (
     <div className="flex items-center justify-around w-full flex-wrap">
       <img
