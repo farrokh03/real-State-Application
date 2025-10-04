@@ -1,0 +1,70 @@
+@import "tailwindcss";
+/* Navbar */
+.navbar {
+  @apply w-full h-32 sticky top-0 z-50 bg-white;
+}
+
+.navbar ul {
+  @apply flex items-center justify-evenly px-6 w-full h-32 max-2xl:text-sm;
+}
+
+ul li {
+  @apply m-4 flex justify-around justify-items-center max-xl:hidden;
+}
+
+/* Logo */
+.logo {
+  @apply w-1/4 h-32 flex justify-start items-center;
+}
+.logo img {
+  @apply h-32 w-32 ml-5 pb-1 bg-center bg-cover;
+}
+.logo p {
+  @apply flex items-center justify-around w-full h-full text-2xl text-black;
+}
+
+/* Links */
+.links {
+  @apply flex h-20 items-center justify-around w-5/8 px-8 max-xl:order-3 max-xl:justify-end max-xl:w-fit  rounded-sm  shadow-lg shadow-gray-300 backdrop-blur-3xl max-xl:shadow-none max-xl:backdrop-blur-none;
+}
+.links li a {
+  @apply text-gray-700 transition-colors;
+}
+.links li a:hover {
+  @apply text-cyan-500 font-medium;
+}
+
+/* Buttons */
+.buttons {
+  @apply flex justify-around items-center w-1/3 px-5 max-xl:w-1/2;
+}
+.buttons .btn--signin,
+.buttons .btn--signup {
+  @apply hidden w-30 h-8 px-8 py-1 m-2 rounded-md bg-gradient-to-l from-blue-950 to-blue-900 text-white shadow-lg shadow-gray-700 transition-colors max-xl:text-xs max-xl:px-0;
+}
+.buttons .btn--signin:hover,
+.buttons .btn--signup:hover {
+  @apply bg-gradient-to-l from-blue-50 to-blue-300 backdrop-blur-md border-2 border-violet-950 text-black;
+}
+
+/* User account */
+.user--account {
+  @apply flex flex-col flex-wrap justify-center items-end w-3/4 min-w-fit h-20 px-6  rounded-xl   backdrop-blur-3xl shadow-lg shadow-gray-300 max-md:hidden;
+}
+.user--account h3 {
+  @apply w-40 px-4 text-white bg-gradient-to-l from-blue-400 to-blue-500   shadow-xl shadow-gray-500;
+}
+.btn--signout {
+  @apply w-40 mt-1 h-8 text-xs font-bold text-white cursor-pointer  shadow-lg shadow-gray-500 bg-gradient-to-l from-neutral-700 to-neutral-500 inset-shadow-sm inset-shadow-gray-700 transition-colors hover:bg-gradient-to-l hover:from-gray-700 hover:to-gray-500 hover:text-blue-400;
+}
+.account {
+  @apply flex justify-around items-center w-18 h-18 m-1 text-neutral-500 bg-gray-800 rounded-full border-4 border-gray-500 shadow-xl shadow-gray-500 hover:border-blue-200 transition-colors;
+}
+
+/* Burger menu */
+.burger--menu {
+  @apply hidden max-xl:flex z-10 w-8 h-6 flex-wrap gap-1 cursor-pointer justify-between items-center;
+}
+.burger--menu div {
+  @apply w-full h-0.5 border-b-4 border-black;
+}
