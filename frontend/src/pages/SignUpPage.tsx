@@ -12,9 +12,9 @@ const SingUpPage = () => {
       />
       <div className="w-2/3 h-18/24 z-1 bg-gray-100/30 backdrop-blur-xs">
         <div className="h-11/12 w-full flex">
-          <div className="w-1/2 h-6/6 p-5">
+          <div className="w-5/12  h-6/6 p-5">
             <h1 className="h-1/12 text-4xl text-green-400 font-bold">
-              Sign in
+              Sign up
             </h1>
             <p className="w-full text-white p-5 h-1/12">
               Don't have an account ?{" "}
