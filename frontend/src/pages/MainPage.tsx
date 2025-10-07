@@ -101,33 +101,14 @@ const MainPage = () => {
       </div>
       <div className="w-full h-lvh bg-white  flex justify-around items-center flex-wrap ">
         <SliderAlbum />
-        {/* <ProductsShowCase
+        <ProductsShowCase
           listToShow={products.products.filter(
             (item) => item.id > 11 && item.id < 18
           )}
           showCase="Best from the customer's perspective"
-          /> */}
+        />
         <div className="h-7/12 gap-1  w-12/12 p-5 flex flex-wrap justify-around">
           <div className="gap-2 w-8/24 h-full flex flex-wrap overflow-hidden">
-            {/* {products.products
-              .filter((item) => item.id > 5 && item.id < 12)
-              .map((x) => (
-                <div className="w-30/96 h-23/48 hover:bg-neutral-500 transition-all bg-neutral-800 p-1 flex  flex-col items-center shadow-sm shadow-neutral-700">
-                <img
-                className="object-cover w-7/8 h-7/12"
-                src={x.image}
-                alt=""
-                />
-                <p className=" capitalize text-white">{x.name}</p>
-                <p className="capitalize text-yellow-300">
-                price: {x.price}$
-                </p>
-                <button className="w-2/3 px-2 py-1 text-neutral-800 bg-white hover:bg-yellow-500 transition-all">
-                add to basket
-                </button>
-                </div>
-                ))} */}
-
             {prods.map((p) => (
               // console.log(p)
               <div
@@ -182,7 +163,7 @@ const MainPage = () => {
           </div>
           <Offers width="w-7/48" height="h-11/12" src={randomImg3} />
         </div>
-        {/* <ProductsShowCase
+        <ProductsShowCase
           listToShow={products.products.filter(
             (item) => item.id > 8 && item.id < 25
           )}
@@ -192,7 +173,7 @@ const MainPage = () => {
         <ProductsShowCase
           listToShow={products.products.filter((item) => item.id < 9)}
           showCase="The most discounts"
-        /> */}
+        />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import img from "./../assets/bg.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -18,16 +18,19 @@ const SingUpPage = () => {
     });
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = async function (e) {
-    // e.preventDefault();
+    e.preventDefault();
     try {
-      const res = await axios.post(
-        "http://127.0.0.1:8000/api/items/",
-        formData
-      );
-      console.log("user created:", res.data);
+      await axios.post("http://127.0.0.1:8000/api/users/", {
+        username: formData.username,
+        password: formData.password,
+      });
+      navigate("/");
       setFormData({ username: "", password: "" });
     } catch (error) {
+      navigate("/*");
       console.log("error submitting form:", error);
     }
   };
@@ -47,10 +50,11 @@ const SingUpPage = () => {
             </h1>
             <p className="w-full text-white p-5 h-1/12">
               You have an account ?{" "}
-              <Link className="text-green-400 underline" to="signin">
+              <Link to="/signin" className="text-green-400 underline">
                 Sign in now
               </Link>
             </p>
+
             <form
               onSubmit={handleSubmit}
               className="w-full h-12/12  flex flex-col p-5 gap-2"
@@ -61,28 +65,29 @@ const SingUpPage = () => {
                 User Name :
               </label>
               <input
+                onChange={handleChange}
                 className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500"
                 name="username"
                 type="text"
                 placeholder="UserName..."
                 value={formData.username}
-                onChange={handleChange}
               />
               <label className=" text-white text-md" htmlFor="password">
                 Password :
               </label>
               <input
+                onChange={handleChange}
                 className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500"
                 name="password"
                 type="password"
                 placeholder="Password..."
                 value={formData.password}
-                onChange={handleChange}
               />
               <label className=" text-white text-md" htmlFor="password">
                 Password validatation :
               </label>
               <input
+                onChange={handleChange}
                 className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500"
                 name="password"
                 type="password"
@@ -101,12 +106,14 @@ const SingUpPage = () => {
               <Link className=" underline self-end text-green-500" to="">
                 Forget password?
               </Link>
+
               <button
                 className=" bg-neutral-800 hover:bg-neutral-600 hover:text-blue-500 text-white w-10/12 self-center h-10 mt-5"
                 type="submit"
               >
                 Sign up
               </button>
+
               <p className=" text-white self-center   w-full text-center border-b-2">
                 or
               </p>
