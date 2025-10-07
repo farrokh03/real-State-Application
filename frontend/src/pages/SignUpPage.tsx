@@ -48,12 +48,6 @@ const SingUpPage = () => {
             <h1 className="h-1/12 text-4xl text-green-400 font-bold">
               Sign up
             </h1>
-            <p className="w-full text-white p-5 h-1/12">
-              You have an account ?{" "}
-              <Link to="/signin" className="text-green-400 underline">
-                Sign in now
-              </Link>
-            </p>
 
             <form
               onSubmit={handleSubmit}
@@ -66,10 +60,12 @@ const SingUpPage = () => {
               </label>
               <input
                 onChange={handleChange}
-                className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500"
+                className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500  border border-gray-300  outline-none transition-all duration-300
+             focus:border-blue-500 focus:shadow-[0_0_10px_rgba(59,130,246,0.5)]
+             hover:border-blue-400"
                 name="username"
                 type="text"
-                placeholder="UserName..."
+                placeholder="Username..."
                 value={formData.username}
               />
               <label className=" text-white text-md" htmlFor="password">
@@ -77,7 +73,9 @@ const SingUpPage = () => {
               </label>
               <input
                 onChange={handleChange}
-                className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500"
+                className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500  border border-gray-300  outline-none transition-all duration-300
+             focus:border-blue-500 focus:shadow-[0_0_10px_rgba(59,130,246,0.5)]
+             hover:border-blue-400"
                 name="password"
                 type="password"
                 placeholder="Password..."
@@ -88,24 +86,13 @@ const SingUpPage = () => {
               </label>
               <input
                 onChange={handleChange}
-                className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500"
+                className="w-10/12 bg-white h-9 outline-0 px-5 self-center py-1 shadow-lg shadow-neutral-500  border border-gray-300 outline-none transition-all duration-300
+             focus:border-blue-500 focus:shadow-[0_0_10px_rgba(59,130,246,0.5)]
+             hover:border-blue-400"
                 name="password"
                 type="password"
                 placeholder="Password..."
               />
-              <div className="w-full flex items-center gap-2">
-                <label className="text-white" htmlFor="remember">
-                  remember me
-                </label>
-                <input
-                  className="bg-white w-4 h-4 outline-0 border-none border-b-2"
-                  name="remember"
-                  type="checkbox"
-                />
-              </div>
-              <Link className=" underline self-end text-green-500" to="">
-                Forget password?
-              </Link>
 
               <button
                 className=" bg-neutral-800 hover:bg-neutral-600 hover:text-blue-500 text-white w-10/12 self-center h-10 mt-5"
@@ -113,6 +100,15 @@ const SingUpPage = () => {
               >
                 Sign up
               </button>
+              <p className=" text-white self-center p-5 h-1/12">
+                You have an account ?{"  "}
+                <Link
+                  to="/signin"
+                  className="text-green-400 underline decoration-0 decoration-emerald-200 underline-offset-6"
+                >
+                  Sign in now
+                </Link>
+              </p>
 
               <p className=" text-white self-center   w-full text-center border-b-2">
                 or
