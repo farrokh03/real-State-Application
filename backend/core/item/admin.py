@@ -22,6 +22,7 @@ class CategoryAdminModel(admin.ModelAdmin):
     model = CategoryModel
     fields = ['id', 'name', 'description']
     list_filter = ["name"]
+    readonly_fields = ['id']
 
 
 class ItemImagesAdminModel(admin.ModelAdmin):
