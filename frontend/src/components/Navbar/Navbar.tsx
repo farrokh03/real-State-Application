@@ -4,6 +4,8 @@ import logo from "../../assets/—Pngtree—shopping logo design_6020234.png";
 import img1 from "./../../assets/photo_2024-02-14_12-35-20.jpg";
 import { useState } from "react";
 import "./Navbar.css";
+import { useContext } from "react";
+import { AuthContext } from "./../AuthContext";
 import {
   faCartShopping,
   faHome,
@@ -13,6 +15,7 @@ import {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { user, logout } = useContext(AuthContext);
 
   return (
     <>
@@ -73,14 +76,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="buttons">
-            <button className="btn--signin">
-              <Link to="/signin">Sign in</Link>
-            </button>
-            <button className="btn--signup">
-              <Link to="/signup">Sign up</Link>
-            </button>
-            <li className="user--account">
+          {user ? (
+            <li className="user--account  hidden">
               <Link className="account" to="/useraccount">
                 <img
                   className=" bg-cover w-full h-full rounded-full"
@@ -89,9 +86,17 @@ const Navbar = () => {
                 />
               </Link>
               <h3>User Name</h3>
-              <button className="btn--signout">Sign Out</button>
             </li>
-          </div>
+          ) : (
+            <div className="buttons">
+              <button className="btn--signin">
+                <Link to="/signin">Sign in</Link>
+              </button>
+              <button className="btn--signup">
+                <Link to="/signup">Sign up</Link>
+              </button>
+            </div>
+          )}
         </ul>
       </nav>
     </>

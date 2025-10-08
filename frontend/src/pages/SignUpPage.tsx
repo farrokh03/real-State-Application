@@ -67,6 +67,7 @@ const SingUpPage = () => {
                 type="text"
                 placeholder="Username..."
                 value={formData.username}
+                autoComplete="off"
               />
               <label className=" text-white text-md" htmlFor="password">
                 Password :
@@ -80,6 +81,7 @@ const SingUpPage = () => {
                 type="password"
                 placeholder="Password..."
                 value={formData.password}
+                autoComplete="off"
               />
               <label className=" text-white text-md" htmlFor="password">
                 Password validatation :
@@ -92,6 +94,7 @@ const SingUpPage = () => {
                 name="password"
                 type="password"
                 placeholder="Password..."
+                autoComplete="off"
               />
 
               <button

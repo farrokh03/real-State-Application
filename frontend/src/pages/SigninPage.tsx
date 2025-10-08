@@ -5,6 +5,8 @@ import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { AuthContext } from "../components/AuthContext";
+import { useContext } from "react";
 
 const SignInPage = () => {
   const [formData, setFormData] = useState({
@@ -20,17 +22,20 @@ const SignInPage = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const { login } = useContext(AuthContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "http://127.0.0.1:8000/api-auth/login/",
-        formData
-      );
-      const { access, user } = res.data;
-      localStorage.setItem("token", access);
-      localStorage.setItem("user", JSON.stringify(user));
+      await axios
+        .post("http://127.0.0.1:8000/api/token", { username, password })
+        .then((Response) => {
+          const token = Response.data.access;
+          localStorage.setItem("token", token);
+          const userData = { username, token };
+          login(userData);
+          navigate("/");
+        });
       navigate("/");
     } catch (error) {
       console.error("Login failed:", error);
@@ -101,6 +106,8 @@ const SignInPage = () => {
               onSubmit={handleSubmit}
               className="w-full h-12/12 flex flex-col p-5 gap-2"
               aria-label="Sign in form"
+              method="post"
+              action="post"
             >
               <label className="text-white text-md" htmlFor="username">
                 Username or Email

@@ -18,36 +18,39 @@ import Comments from "../pages/UserAccount/Comments";
 import ShoppingBasket from "../pages/UserAccount/Basket";
 import History from "../pages/UserAccount/History";
 import Wishlist from "../pages/UserAccount/Wishlist";
+import { AuthProvider } from "../components/AuthContext";
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<MainPage />} />
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<MainPage />} />
 
-            <Route path="/shop" element={<ShopPage />} />
+              <Route path="/shop" element={<ShopPage />} />
 
-            <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services" element={<ServicesPage />} />
 
-            <Route path="/contactus" element={<ContactPage />} />
-          </Route>
-          <Route path="/*" element={<NotFound />} />
-          <Route path="/useraccount" element={<UserAccountPage />}>
-            <Route index element={<UserDashboard />} />
-            <Route path="editprof" element={<EditProfile />} />
-            <Route path="userwallet" element={<Wallet />} />
-            <Route path="userhistory" element={<History />} />
-            <Route path="shoppingbasket" element={<ShoppingBasket />} />
-            <Route path="usernotifications" element={<Notifications />} />
-            <Route path="userwishlist" element={<Wishlist />} />
-            <Route path="usercomments" element={<Comments />} />
-            <Route path="profilesetting" element={<Settinge />} />
-          </Route>
+              <Route path="/contactus" element={<ContactPage />} />
+            </Route>
+            <Route path="/*" element={<NotFound />} />
+            <Route path="/useraccount" element={<UserAccountPage />}>
+              <Route index element={<UserDashboard />} />
+              <Route path="editprof" element={<EditProfile />} />
+              <Route path="userwallet" element={<Wallet />} />
+              <Route path="userhistory" element={<History />} />
+              <Route path="shoppingbasket" element={<ShoppingBasket />} />
+              <Route path="usernotifications" element={<Notifications />} />
+              <Route path="userwishlist" element={<Wishlist />} />
+              <Route path="usercomments" element={<Comments />} />
+              <Route path="profilesetting" element={<Settinge />} />
+            </Route>
 
-          <Route path="/signin" element={<SignInPage />} />
-          <Route path="/signup" element={<SingUpPage />} />
-        </Routes>
+            <Route path="/signin" element={<SignInPage />} />
+            <Route path="/signup" element={<SingUpPage />} />
+          </Routes>
+        </AuthProvider>
       </BrowserRouter>
     </div>
   );

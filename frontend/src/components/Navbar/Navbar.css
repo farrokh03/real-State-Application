@@ -40,7 +40,7 @@ ul li {
 }
 .buttons .btn--signin,
 .buttons .btn--signup {
-  @apply hidden w-30 h-8 px-8 py-1 m-2 rounded-md bg-gradient-to-l from-blue-950 to-blue-900 text-white shadow-lg shadow-gray-700 transition-colors max-xl:text-xs max-xl:px-0;
+  @apply flex w-30 h-8 px-8 py-1 m-2 rounded-md bg-gradient-to-l from-blue-950 to-blue-900 text-white shadow-lg shadow-gray-700 transition-colors max-xl:text-xs max-xl:px-0;
 }
 .buttons .btn--signin:hover,
 .buttons .btn--signup:hover {
@@ -49,7 +49,7 @@ ul li {
 
 /* User account */
 .user--account {
-  @apply flex flex-col flex-wrap justify-center items-end w-3/4 min-w-fit h-20 px-6  rounded-xl   backdrop-blur-3xl shadow-lg shadow-gray-300 max-md:hidden;
+  @apply  flex-col flex-wrap justify-center items-end w-3/4 min-w-fit h-20 px-6  rounded-xl  hidden  backdrop-blur-3xl shadow-lg shadow-gray-300 max-md:hidden;
 }
 .user--account h3 {
   @apply w-40 px-4 text-white bg-gradient-to-l from-blue-400 to-blue-500   shadow-xl shadow-gray-500;
