@@ -8,7 +8,7 @@
       "attributes":[],
       "name": "Nike Air Max 270",
       "price": 129,
-      "category": "Shoes" 
+      "category": 2 
        },
     {
       
@@ -17,7 +17,7 @@
       "attributes":[],
       "name": "Adidas Ultraboost",
       "price": 149,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -25,7 +25,7 @@
       "attributes":[],
       "name": "Puma RS-X",
       "price": 119,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -33,7 +33,7 @@
       "attributes":[],
       "name": "Converse Chuck Taylor",
       "price": 69,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -41,7 +41,7 @@
       "attributes":[],
       "name": "Vans Old Skool",
       "price": 59,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -49,7 +49,7 @@
       "attributes":[],
       "name": "Reebok Classic",
       "price": 89,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -57,7 +57,7 @@
       "attributes":[],
       "name": "New Balance 574",
       "price": 109,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -65,7 +65,7 @@
       "attributes":[],
       "name": "Jordan 1 Retro",
       "price": 199,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       "stock":5,
@@ -73,7 +73,7 @@
       "attributes":[],
       "name": "Asics Gel Lyte",
       "price": 99,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       
@@ -82,7 +82,7 @@
       "attributes":[],
       "name": "Fila Disruptor",
       "price": 79,
-      "category": "Shoes"    },
+      "category": 2    },
     {
       
       
@@ -91,7 +91,7 @@
       "attributes":[],
       "name": "Apple iPhone 14 Pro",
       "price": 999,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -100,7 +100,7 @@
       "attributes":[],
       "name": "Samsung Galaxy S23",
       "price": 899,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -109,7 +109,7 @@
       "attributes":[],
       "name": "Sony WH-1000XM4",
       "price": 349,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -118,7 +118,7 @@
       "attributes":[],
       "name": "Apple MacBook Pro",
       "price": 1999,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -127,7 +127,7 @@
       "attributes":[],
       "name": "Dell XPS 13",
       "price": 1399,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -136,7 +136,7 @@
       "attributes":[],
       "name": "iPad Pro",
       "price": 799,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -145,7 +145,7 @@
       "attributes":[],
       "name": "Google Pixel 7",
       "price": 699,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -154,7 +154,7 @@
       "attributes":[],
       "name": "Bose SoundLink",
       "price": 199,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -163,7 +163,7 @@
       "attributes":[],
       "name": "Apple Watch Series 8",
       "price": 399,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -172,7 +172,7 @@
       "attributes":[],
       "name": "Canon EOS R5",
       "price": 3899,
-      "category": "Electronics"    },
+      "category": 3    },
     {
       
       
@@ -181,7 +181,7 @@
       "attributes":[],
       "name": "Levi's 501 Jeans",
       "price": 79,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -190,7 +190,7 @@
       "attributes":[],
       "name": "Nike Hoodie",
       "price": 59,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -199,7 +199,7 @@
       "attributes":[],
       "name": "Adidas Track Jacket",
       "price": 69,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -208,7 +208,7 @@
       "attributes":[],
       "name": "Zara Summer Dress",
       "price": 49,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -217,7 +217,7 @@
       "attributes":[],
       "name": "Uniqlo T-Shirt",
       "price": 19,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -226,7 +226,7 @@
       "attributes":[],
       "name": "North Face Jacket",
       "price": 199,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -235,7 +235,7 @@
       "attributes":[],
       "name": "H&M Shirt",
       "price": 25,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -244,7 +244,7 @@
       "attributes":[],
       "name": "Calvin Klein Jeans",
       "price": 89,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -253,7 +253,7 @@
       "attributes":[],
       "name": "Gucci T-Shirt",
       "price": 399,
-      "category": "Clothing"      },
+      "category": 4      },
     {
       
       
@@ -262,7 +262,7 @@
       "attributes":[],
       "name": "Tommy Hilfiger Sweater",
       "price": 129,
-      "category": "Clothing"    },
+      "category": 4    },
     {
       
       
@@ -271,7 +271,7 @@
       "attributes":[],
       "name": "Dining Table Set",
       "price": 499,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -280,7 +280,7 @@
       "attributes":[],
       "name": "Office Chair",
       "price": 199,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -289,7 +289,7 @@
       "attributes":[],
       "name": "Wooden Bed Frame",
       "price": 799,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -298,7 +298,7 @@
       "attributes":[],
       "name": "Bookshelf",
       "price": 149,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -307,7 +307,7 @@
       "attributes":[],
       "name": "Sofa Couch",
       "price": 899,
-      "category": "Furniture"      },
+      "category": 5      },
     {
       
       
@@ -316,7 +316,7 @@
       "attributes":[],
       "name": "Coffee Table",
       "price": 129,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -325,7 +325,7 @@
       "attributes":[],
       "name": "Wardrobe",
       "price": 699,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -334,7 +334,7 @@
       "attributes":[],
       "name": "Dining Chairs",
       "price": 249,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -343,7 +343,7 @@
       "attributes":[],
       "name": "Recliner Chair",
       "price": 349,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -352,7 +352,7 @@
       "attributes":[],
       "name": "TV Stand",
       "price": 179,
-      "category": "Furniture"    },
+      "category": 5    },
     {
       
       
@@ -361,7 +361,7 @@
       "attributes":[],
       "name": "The Great Gatsby",
       "price": 14,
-      "category": "Books"       },
+      "category": 6       },
     {
       
       
@@ -370,7 +370,7 @@
       "attributes":[],
       "name": "Atomic Habits",
       "price": 21,
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -378,7 +378,7 @@
       "description":"w",
       "attributes":[],
       "name": "Atomic chapata",
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -387,7 +387,7 @@
       "attributes":[],
       "name": "1984 by George Orwell",
       "price": 15,
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -396,7 +396,7 @@
       "attributes":[],
       "name": "Harry Potter",
       "price": 29,
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -405,7 +405,7 @@
       "attributes":[],
       "name": "The Hobbit",
       "price": 19,
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -414,7 +414,7 @@
       "attributes":[],
       "name": "Pride and Prejudice",
       "price": 16,
-      "category": "Books"       },
+      "category": 6       },
     {
       
       
@@ -423,7 +423,7 @@
       "attributes":[],
       "name": "The Catcher in the Rye",
       "price": 17,
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -432,7 +432,7 @@
       "attributes":[],
       "name": "The Alchemist",
       "price": 13,
-      "category": "Books"    },
+      "category": 6    },
     {
       
       
@@ -441,7 +441,7 @@
       "attributes":[],
       "name": "Sapiens",
       "price": 24,
-      "category": "Books"    
+      "category": 6    
     },
     {
       
@@ -451,7 +451,7 @@
       "attributes":[],
       "name": "LEGO Star Wars",
       "price": 59,
-      "category": "Toys"  
+      "category": 7  
       },
     {
       
@@ -461,7 +461,7 @@
       "attributes":[],
       "name": "Teddy Bear",
       "price": 24,
-      "category": "Toys"     },
+      "category": 7     },
     {
       
       
@@ -470,7 +470,7 @@
       "attributes":[],
       "name": "RC Car",
       "price": 89,
-      "category": "Toys"
+      "category": 7
     },
     {
       
@@ -480,7 +480,7 @@
       "attributes":[],
       "name": "Dollhouse",
       "price": 119,
-      "category": "Toys"
+      "category": 7
     },
     {
       
@@ -490,7 +490,7 @@
       "attributes":[],
       "name": "Puzzle Set",
       "price": 19,
-      "category": "Toys"
+      "category": 7
     },
     {
       
@@ -500,7 +500,7 @@
       "attributes":[],
       "name": "Action Figure",
       "price": 29,
-      "category": "Toys"      
+      "category": 7      
     },
     {
       
@@ -510,7 +510,7 @@
       "attributes":[],
       "name": "Toy Train",
       "price": 49,
-      "category": "Toys"
+      "category": 7
     },
     {
       
@@ -520,7 +520,7 @@
       "attributes":[],
       "name": "Barbie Doll",
       "price": 39,
-      "category": "Toys"
+      "category": 7
     },
     {
       
@@ -530,7 +530,7 @@
       "attributes":[],
       "name": "Rubik's Cube",
       "price": 14,
-      "category": "Toys"      
+      "category": 7      
     },
     {
       
@@ -540,7 +540,7 @@
       "attributes":[],
       "name": "Play-Doh Set",
       "price": 22,
-      "category": "Toys"
+      "category": 7
     },
     {
       
@@ -550,7 +550,7 @@
       "attributes":[],
       "name": "Basketball",
       "price": 34,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -560,7 +560,7 @@
       "attributes":[],
       "name": "Yoga Mat",
       "price": 29,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -570,7 +570,7 @@
       "attributes":[],
       "name": "Football",
       "price": 25,
-      "category": "Sports"
+      "category": 8
        },
     {
       
@@ -580,7 +580,7 @@
       "attributes":[],
       "name": "Tennis Racket",
       "price": 149,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -590,7 +590,7 @@
       "attributes":[],
       "name": "Running Shoes",
       "price": 89,
-      "category": "Sports"       },
+      "category": 8       },
     {
       
       
@@ -599,7 +599,7 @@
       "attributes":[],
       "name": "Boxing Gloves",
       "price": 59,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -609,7 +609,7 @@
       "attributes":[],
       "name": "Skateboard",
       "price": 119,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -619,7 +619,7 @@
       "attributes":[],
       "name": "Swim Goggles",
       "price": 19,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -629,7 +629,7 @@
       "attributes":[],
       "name": "Baseball Bat",
       "price": 79,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -639,7 +639,7 @@
       "attributes":[],
       "name": "Golf Clubs",
       "price": 499,
-      "category": "Sports"
+      "category": 8
     },
     {
       
@@ -649,7 +649,7 @@
       "attributes":[],
       "name": "Nescafe Coffee",
       "price": 9,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -659,7 +659,7 @@
       "attributes":[],
       "name": "Organic Bananas",
       "price": 2,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -669,7 +669,7 @@
       "attributes":[],
       "name": "Fresh Milk",
       "price": 3,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -679,7 +679,7 @@
       "attributes":[],
       "name": "Brown Bread",
       "price": 2,
-      "category": "Groceries"
+      "category": 9
        },
     {
       
@@ -689,7 +689,7 @@
       "attributes":[],
       "name": "Eggs (12 Pack)",
       "price": 4,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -699,7 +699,7 @@
       "attributes":[],
       "name": "Olive Oil",
       "price": 12,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -709,7 +709,7 @@
       "attributes":[],
       "name": "Cheddar Cheese",
       "price": 5,
-      "category": "Groceries"
+      "category": 9
        },
     {
       
@@ -719,7 +719,7 @@
       "attributes":[],
       "name": "Tomatoes",
       "price": 1,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -729,7 +729,7 @@
       "attributes":[],
       "name": "Chicken Breast",
       "price": 8,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -739,7 +739,7 @@
       "attributes":[],
       "name": "Rice (1kg)",
       "price": 6,
-      "category": "Groceries"
+      "category": 9
     },
     {
       
@@ -749,7 +749,7 @@
       "attributes":[],
       "name": "Lipstick",
       "price": 29,
-      "category": "Beauty"
+      "category": 10
        },
     {
       
@@ -759,7 +759,7 @@
       "attributes":[],
       "name": "Face Cream",
       "price": 39,
-      "category": "Beauty"
+      "category": 10
        },
     {
       
@@ -769,7 +769,7 @@
       "attributes":[],
       "name": "Perfume",
       "price": 59,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -779,7 +779,7 @@
       "attributes":[],
       "name": "Foundation",
       "price": 34,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -789,7 +789,7 @@
       "attributes":[],
       "name": "Eyeliner",
       "price": 14,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -799,7 +799,7 @@
       "attributes":[],
       "name": "Mascara",
       "price": 19,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -809,7 +809,7 @@
       "attributes":[],
       "name": "Shampoo",
       "price": 12,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -819,7 +819,7 @@
       "attributes":[],
       "name": "Conditioner",
       "price": 13,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -829,7 +829,7 @@
       "attributes":[],
       "name": "Body Lotion",
       "price": 22,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -839,7 +839,7 @@
       "attributes":[],
       "name": "Makeup Kit",
       "price": 79,
-      "category": "Beauty"
+      "category": 10
     },
     {
       
@@ -849,7 +849,7 @@
       "attributes":[],
       "name": "Dog Food",
       "price": 24,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -859,7 +859,7 @@
       "attributes":[],
       "name": "Cat Bed",
       "price": 49,
-      "category": "Pets"
+      "category": 11
        },
     {
       
@@ -869,7 +869,7 @@
       "attributes":[],
       "name": "Bird Cage",
       "price": 89,
-      "category": "Pets"      
+      "category": 11      
     },
     {
       
@@ -879,7 +879,7 @@
       "attributes":[],
       "name": "Fish Tank",
       "price": 149,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -889,7 +889,7 @@
       "attributes":[],
       "name": "Pet Toys",
       "price": 19,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -899,7 +899,7 @@
       "attributes":[],
       "name": "Dog Leash",
       "price": 14,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -909,7 +909,7 @@
       "attributes":[],
       "name": "Cat Scratcher",
       "price": 29,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -919,7 +919,7 @@
       "attributes":[],
       "name": "Hamster Wheel",
       "price": 25,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -929,7 +929,7 @@
       "attributes":[],
       "name": "Dog Bed",
       "price": 59,
-      "category": "Pets"
+      "category": 11
     },
     {
       
@@ -939,6 +939,6 @@
       "attributes":[],
       "name": "Pet Shampoo",
       "price": 11,
-      "category": "Pets"    }
+      "category": 11    }
   ]
 }
