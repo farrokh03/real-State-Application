@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ItemModel, ItemAttributesModel, CategoryModel
+from .models import ItemModel, ItemAttributesModel, CategoryModel, ItemImagesModel
 # Register your models here.
 
 
@@ -24,6 +24,13 @@ class CategoryAdminModel(admin.ModelAdmin):
     list_filter = ["name", ]
 
 
+class ItemImagesAdminModel(admin.ModelAdmin):
+    model = ItemImagesModel
+    fields = ['item', 'image']
+    list_filter = ['item']
+
+
 admin.site.register(ItemModel, ItemAdminModel)
 admin.site.register(ItemAttributesModel, ItemAttributesAdminModel)
 admin.site.register(CategoryModel, CategoryAdminModel)
+admin.site.register(ItemImagesModel, ItemImagesAdminModel)
