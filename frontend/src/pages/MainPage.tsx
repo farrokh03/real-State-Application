@@ -13,7 +13,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProductsShowCase from "../components/ProductShowCase/ProductsShowCase";
-
+import chahabdar from "./../assets/photo_2025-10-08_11-03-39.jpg";
 // inside MainPage
 
 const MainPage = () => {
@@ -115,9 +115,13 @@ const MainPage = () => {
                 key={p.id}
                 className="w-30/96 h-23/48 hover:bg-neutral-500 transition-all bg-neutral-800 p-1 flex  flex-col items-center shadow-sm shadow-neutral-700"
               >
-                <img className="object-cover w-7/8 h-7/12" src={p.url} alt="" />
-                <p className=" capitalize text-white">{p.description}</p>
-                <p className="capitalize text-yellow-300">price: {p.price}$</p>
+                <img
+                  className="object-cover w-7/8 h-7/12"
+                  src={chahabdar}
+                  alt=""
+                />
+                <p className=" capitalize text-white">{p.name}</p>
+                <p className="capitalize text-yellow-300">price: {0.25}$</p>
                 <button className="w-2/3 px-2 py-1 text-neutral-800 bg-white hover:bg-yellow-500 transition-all">
                   add to basket
                 </button>

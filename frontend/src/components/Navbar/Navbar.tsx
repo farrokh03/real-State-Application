@@ -15,7 +15,7 @@ import {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { user, logout } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   return (
     <>
