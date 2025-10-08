@@ -20,8 +20,8 @@ class ItemAttributesAdminModel(admin.ModelAdmin):
 
 class CategoryAdminModel(admin.ModelAdmin):
     model = CategoryModel
-    fields = ['name', 'description']
-    list_filter = ["name", ]
+    fields = ['id', 'name', 'description']
+    list_filter = ["name"]
 
 
 class ItemImagesAdminModel(admin.ModelAdmin):
