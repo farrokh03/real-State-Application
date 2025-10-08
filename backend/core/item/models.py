@@ -79,12 +79,18 @@ class ItemAttributesModel(models.Model):
         instance.save()
         return instance
 
+    class Meta:
+        verbose_name = 'Item attribute'
+
 
 class ItemImagesModel(models.Model):
     item = models.ForeignKey(
         ItemModel, on_delete=models.CASCADE, related_name="images")
-    image = models.ImageField(upload_to="item_images/")
+    image_url = models.URLField(max_length=500, null=True)
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"Image for {self.item.name}"
+
+    class Meta:
+        verbose_name = 'Item image'

@@ -26,7 +26,7 @@ class CategoryAdminModel(admin.ModelAdmin):
 
 class ItemImagesAdminModel(admin.ModelAdmin):
     model = ItemImagesModel
-    fields = ['item', 'image']
+    fields = ['item', 'image_url']
     list_filter = ['item']
 
 
