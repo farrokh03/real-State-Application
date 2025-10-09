@@ -27,18 +27,18 @@ const SignInPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios
-        .post("http://127.0.0.1:8000/api/token", { username, password })
-        .then((Response) => {
-          const token = Response.data.access;
-          localStorage.setItem("token", token);
-          const userData = { username, token };
-          login(userData);
-          navigate("/");
-        });
+      const response = await axios.post(
+        "http://127.0.0.1:8000/api/token/",
+        formData
+      );
+      const token = response.data.access;
+      localStorage.setItem("token", token);
+      const userData = { username: formData.username, token };
+      login(userData);
       navigate("/");
     } catch (error) {
       console.error("Login failed:", error);
+      alert("invalid username or password .");
     }
   };
   useEffect(() => {

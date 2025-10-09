@@ -49,10 +49,10 @@ ul li {
 
 /* User account */
 .user--account {
-  @apply  flex-col flex-wrap justify-center items-end w-3/4 min-w-fit h-20 px-6  rounded-xl  hidden  backdrop-blur-3xl shadow-lg shadow-gray-300 max-md:hidden;
+  @apply flex flex-col flex-wrap justify-center items-end w-1/4 min-w-fit h-20 px-6  rounded-xl    backdrop-blur-3xl shadow-lg shadow-gray-300 max-md:hidden;
 }
 .user--account h3 {
-  @apply w-40 px-4 text-white bg-gradient-to-l from-blue-400 to-blue-500   shadow-xl shadow-gray-500;
+  @apply w-40 px-4 text-white bg-gradient-to-l from-neutral-600 to-neutral-800   shadow-xl shadow-gray-500;
 }
 .btn--signout {
   @apply w-40 mt-1 h-8 text-xs font-bold text-white cursor-pointer  shadow-lg shadow-gray-500 bg-gradient-to-l from-neutral-700 to-neutral-500 inset-shadow-sm inset-shadow-gray-700 transition-colors hover:bg-gradient-to-l hover:from-gray-700 hover:to-gray-500 hover:text-blue-400;

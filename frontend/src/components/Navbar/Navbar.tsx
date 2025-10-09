@@ -11,6 +11,8 @@ import {
   faHome,
   faTags,
   faContactCard,
+  faBasketShopping,
+  faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -77,7 +79,7 @@ const Navbar = () => {
           </div>
 
           {user ? (
-            <li className="user--account  hidden">
+            <li className="user--account">
               <Link className="account" to="/useraccount">
                 <img
                   className=" bg-cover w-full h-full rounded-full"
@@ -85,7 +87,21 @@ const Navbar = () => {
                   alt=""
                 />
               </Link>
-              <h3>User Name</h3>
+              <h3>{user.username}</h3>
+              <div className="w-40 h-1/2 flex items-center gap-4 text-xl">
+                <FontAwesomeIcon
+                  className="shadow-lg shadow-neutral-400 p-1 bg-neutral-600 text-white rounded-md"
+                  icon={faBasketShopping}
+                />
+                <FontAwesomeIcon
+                  className="shadow-lg shadow-neutral-400 p-1 bg-neutral-600 text-white rounded-md"
+                  icon={faAddressCard}
+                />
+                <FontAwesomeIcon
+                  className="shadow-lg shadow-neutral-400 p-1 bg-neutral-600 text-white rounded-md"
+                  icon={faAddressCard}
+                />
+              </div>
             </li>
           ) : (
             <div className="buttons">

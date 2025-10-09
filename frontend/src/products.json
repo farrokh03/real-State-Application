@@ -6,7 +6,7 @@
       "stock":5,
       "description":"w",
       "attributes":[],
-      "name": "Nike Air Max 270",
+      "name": "Nike Air270",
       "price": 129,
       "category": 2 
        },
@@ -931,14 +931,13 @@
       "price": 59,
       "category": 11
     },
-    {
-      
-      
-      "stock":5,
-      "description":"w",
-      "attributes":[],
+    { 
       "name": "Pet Shampoo",
+      "description":"w",
+      "category": 11,  
       "price": 11,
-      "category": 11    }
+      "stock":5,
+      "attributes":[]
+      }
   ]
 }

@@ -14,11 +14,11 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class ItemSerializer(serializers.ModelSerializer):
-    attributes = ItemAttributeSerializer(many=True)
-
+    attributes = ItemAttributeSerializer(many=True,read_only=True)
+    read_only_fields = ["attributes"]
     class Meta:
         model = ItemModel
         fields = ["url", "id", "name", "description", "created_at",
                   "updated_at", "category", "price", "stock", "attributes"]
 
-        read_only_fields = ["id"]
+        read_only_fields = ["id", "attributes"]
